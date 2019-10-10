@@ -8,7 +8,7 @@ public class Person {
         return name;
     }
 
-    public void makeACall(Mobile mobile, String message){
-        System.out.print(mobile.call(message));
+    public String makeACall(Mobile mobile, String message){
+        return mobile.checkMessage(message);
     }
 }

@@ -1,7 +1,8 @@
-public class Mobile{
+public abstract class Mobile{
     private String name;
     private String color;
     private String brand;
+    public abstract String checkMessage(String message);
 
     public Mobile(String name, String color, String brand){
         this.name = name;
@@ -14,7 +15,7 @@ public class Mobile{
     }
 
     public String getPhoneInformation(){
-        return "name: " + getName() + ", color: " + getColor() + " brand: " + getBrand();
+        return "name: " + getName() + ", color: " + getColor() + ", brand: " + getBrand();
     }
 
     public String getName() {
